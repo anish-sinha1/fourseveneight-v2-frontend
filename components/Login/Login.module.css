@@ -1,0 +1,24 @@
+.card {
+  display: grid;
+  padding: 1rem;
+  text-align: left;
+  align-items: center;
+  max-width: 25%;
+  margin-left: 35%;
+  margin-top: 12.5%;
+  justify-content: auto;
+}
+
+.form-heading {
+  text-align: center;
+}
+
+.button {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login-message {
+  font-size: 0.8rem;
+  text-align: center;
+}

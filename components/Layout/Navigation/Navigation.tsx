@@ -13,14 +13,14 @@ const Navigation: React.FC = (props) => {
         className={classes["navbar-main"]}
       >
         <Container>
-          <Navbar.Brand href="#home" className={classes["main-title"]}>
+          <Navbar.Brand href="/" className={classes["main-title"]}>
             FourSevenEight
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Nav.Link href="#features">Login</Nav.Link>
+              <Nav.Link href="/login">Login</Nav.Link>
             </Nav>
             <Nav></Nav>
           </Navbar.Collapse>

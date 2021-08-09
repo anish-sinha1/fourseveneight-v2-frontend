@@ -1,16 +1,22 @@
-import { Card, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Fragment } from "react";
 import PostItem from "../PostItem/PostItem";
+import classes from "./PostList.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import IPostItem from "../templates/PostItemTemplate";
 const PostList: React.FC<{ postArray: IPostItem[] }> = (props) => {
   return (
     <Fragment>
-      <Card>
+      <Container className={classes["container"]}>
         {props.postArray.map((post) => {
-          return <PostItem key={post._id} post={post}></PostItem>;
+          return (
+            <Fragment key={post._id}>
+              <PostItem post={post}></PostItem>
+              <hr></hr>
+            </Fragment>
+          );
         })}
-      </Card>
+      </Container>
     </Fragment>
   );
 };

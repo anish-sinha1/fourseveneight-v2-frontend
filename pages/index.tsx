@@ -1,11 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
 import Navigation from "../components/Layout/Navigation/Navigation";
-import styles from "../styles/Home.module.css";
 import axios from "axios";
 import PostList from "../components/PostList/PostList";
 import IPostItem from "../components/templates/PostItemTemplate";
-import mongoose, { ConnectionStates } from "mongoose";
 
 const Home: React.FC<{ postArray: IPostItem[] }> = (props) => {
   return (
